@@ -1,0 +1,20 @@
+<div class="child">
+
+  <h3>Child Component</h3>
+
+  <!-- Instantiates template from #sample in the parent -->
+  <ng-container *ngTemplateOutlet="alternativeParentTemplate; context: {itemName: parentItem}"></ng-container>
+  
+  <br>
+
+  <!-- Creates a template and instantiates it-->
+  <ng-template #alternativeChildTemplate let-item="itemName">{{item}}</ng-template>
+  <ng-container *ngTemplateOutlet="alternativeChildTemplate; context: {itemName: childItem}"></ng-container>
+
+  <br>
+
+  <!-- Sets up a template if ngIf fails and displays it -->
+  <ng-container *ngIf="1 === 0; else alternativeTemplate">Original Template</ng-container>
+  <ng-template #alternativeTemplate>{{items}}</ng-template>
+
+</div>
