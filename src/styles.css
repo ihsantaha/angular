@@ -4,7 +4,12 @@ body {
 }
 
 .child {
-    border: solid 1px gray;
     background-color: lightgray;
+    border: solid 1px gray;
     padding: 1rem;
+}
+
+.highlighted:hover {
+    color: blue;
+    cursor: pointer;
 }
