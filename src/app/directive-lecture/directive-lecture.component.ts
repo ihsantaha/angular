@@ -7,13 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DirectiveLectureComponent implements OnInit {
 
+  item: string = 'Item';
+  
   constructor() { }
 
   ngOnInit() {
   }
 
   onToggleDisableValue(disableValue:boolean) {
-    console.log(`Cuurent Disable Value: ${disableValue}`);
+    console.log(`Current Disable Value: ${disableValue}`);
   }
 
 }

@@ -29,11 +29,11 @@ export class HighlightedDirective {
     return 'solid 1px red';
   }
 
-  @HostBinding('attr.disabled')
-  get toggleMe() {
-    console.log(this.disableValue);
-    return this.disableValue;
-  }
+  // @HostBinding('attr.disabled')
+  // get attrDisabled() {
+  //   console.log(this.disableValue);
+  //   return this.disableValue;
+  // }
 
   @HostListener('click', ['$event'])
   clickMe($event) {

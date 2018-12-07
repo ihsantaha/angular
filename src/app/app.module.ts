@@ -6,6 +6,7 @@ import { NgtemplateLectureComponent } from './ngtemplate-lecture/ngtemplate-lect
 import { ChildComponent } from './ngtemplate-lecture/child/child.component';
 import { HighlightedDirective } from './directives/highlighted.directive';
 import { DirectiveLectureComponent } from './directive-lecture/directive-lecture.component';
+import { NgxUnlessDirective } from './directives/ngx-unless.directive';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { DirectiveLectureComponent } from './directive-lecture/directive-lecture
     NgtemplateLectureComponent,
     ChildComponent,
     HighlightedDirective,
-    DirectiveLectureComponent
+    DirectiveLectureComponent,
+    NgxUnlessDirective
   ],
   imports: [
     BrowserModule

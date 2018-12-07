@@ -1,3 +1,4 @@
+<!-- Custom Directive -->
 <div appHighlighted 
 [disable]="true" 
 (toggleDisableValue)="onToggleDisableValue($event)"
@@ -5,4 +6,29 @@
 
 <p appHighlighted>This paragraph also has the appHighlighted directive</p>
 
-<p (click)="appHighlighter.onToggleDoubleClick()">Double Click Me</p>
+<p (dblclick)="appHighlighter.onToggleDoubleClick()">Double Click Me</p>
+
+<br><br><br>
+
+<!-- Custom Structural Directive with Star Syntax -->
+<div *ngIf="item">
+    Shortcut Ng If Structural Directive
+</div>
+
+<ng-template [ngIf]="item" let-i>
+    <div>
+        Under the hood Ng If Structural Directive {{i}}
+    </div>
+</ng-template>
+
+<br>
+
+<div *ngxUnless="!item" let i>
+    Shortcut Custom Ng Unless Structural Directive {{i}}
+</div>
+
+<ng-template [ngxUnless]="!item">
+    <div>
+        Custom Under the hood Ng Unless Structural Directive
+    </div>
+</ng-template>
