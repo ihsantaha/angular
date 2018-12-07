@@ -1,0 +1,8 @@
+<div appHighlighted 
+[disable]="true" 
+(toggleDisableValue)="onToggleDisableValue($event)"
+#appHighlighter="hl">Directive Lecture Sample</div>
+
+<p appHighlighted>This paragraph also has the appHighlighted directive</p>
+
+<p (click)="appHighlighter.onToggleDoubleClick()">Double Click Me</p>
