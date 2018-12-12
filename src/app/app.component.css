@@ -1,0 +1,11 @@
+.outside {
+    background-color: lightblue;
+}
+
+ .inside {
+    text-decoration: underline;
+}
+
+.outside .inside {
+    font-weight: bold;
+}
