@@ -9,6 +9,7 @@ import { DirectiveLectureComponent } from './directive-lecture/directive-lecture
 import { NgxUnlessDirective } from './directives/ngx-unless.directive';
 import { ViewEncapsulationLectureComponent } from './view-encapsulation-lecture/view-encapsulation-lecture.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

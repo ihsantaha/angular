@@ -1,0 +1,12 @@
+.outside {
+    background-color: lightgray;
+}
+
+.inside {
+    text-decoration-line: underline;
+}
+
+::ng-deep .outside .inside {
+    font-weight: bold;
+    text-align: center;
+}

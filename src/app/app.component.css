@@ -7,5 +7,5 @@
 }
 
 .outside .inside {
-    font-weight: bold;
+    text-decoration-style: dotted;
 }
