@@ -1,0 +1,13 @@
+<div class="container">
+  <form [formGroup]="myForm">
+
+    <label for="name">Name</label><br>
+    <input id="name" formControlName="name"><br><br>
+
+    <label for="email">Email</label><br>
+    <input id="email" formControlName="email"><br><br>
+
+    <button [disabled]="myForm.invalid">Submit</button>
+
+  </form>
+</div>

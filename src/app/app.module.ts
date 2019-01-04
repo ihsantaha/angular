@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { NgtemplateLectureComponent } from './ngtemplate-lecture/ngtemplate-lecture.component';
@@ -23,7 +24,7 @@ import { ReactiveFormsLectureComponent } from './reactive-forms-lecture/reactive
     ReactiveFormsLectureComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

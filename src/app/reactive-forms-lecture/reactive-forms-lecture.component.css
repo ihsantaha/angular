@@ -1,0 +1,22 @@
+.container {
+    background-image: linear-gradient(#fff, #f3f3f3);
+    border: solid 0.1rem black;
+    border-radius: 0.4rem;
+    margin: auto;
+    padding: 1rem;
+    width: 11.2rem;
+}
+
+button, input {
+    border: solid 0.05rem gray;
+    border-radius: 0.2rem;
+    padding: 0.5rem;
+}
+
+button {
+    cursor: pointer;
+}
+
+input.ng-touched.ng-invalid {
+    border: solid 0.1rem red;
+}
