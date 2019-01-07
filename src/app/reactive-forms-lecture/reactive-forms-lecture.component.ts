@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
+import { customValidator } from '../validators';
 
 @Component({
   selector: 'app-reactive-forms-lecture',
@@ -19,7 +20,7 @@ export class ReactiveFormsLectureComponent implements OnInit {
 
   constructor(fb: FormBuilder) {
     this.myForm = fb.group({
-      name: ['', Validators.required],
+      name: ['', customValidator],
       email: ['', [Validators.required, Validators.email]]
     });
   }
