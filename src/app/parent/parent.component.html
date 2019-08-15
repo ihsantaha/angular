@@ -1,0 +1,52 @@
+<h1>{{header}}</h1>
+
+<p #paragraphElement>This is a paragraph element with console data through ViewChild.</p>
+
+<br>
+
+<ng-container *ngIf="1 === 1">
+
+  <h2>Ng-Template</h2>
+
+  <p *ngIf="toggleTemplateData; else alternativeTemplate">
+    Original Template Data
+  </p>
+
+  <ng-template #alternativeTemplate>
+    <p>
+      Alternative Template Data
+    </p>
+  </ng-template>
+
+  <button (click)="onToggleTemplateData()">Toggle Template Data</button>
+
+</ng-container>
+
+
+
+<ng-container *ngIf="1 === 0">
+
+  <app-child>
+    <p>
+      This content is in the app-child element in the parent, and projected through ng-content from the child.
+    </p>
+  </app-child>
+
+</ng-container>
+
+
+
+<ng-container *ngIf="1 === 1">
+
+    <app-child></app-child>
+
+    <app-child></app-child>
+
+    <app-child>
+      <p class="c1">Child: {{child?.item}}</p>
+      <p #c2>This is projected by the default ng-content tag</p>
+    </app-child>
+
+    <p>{{children?.first.item}}</p>
+  
+  </ng-container>

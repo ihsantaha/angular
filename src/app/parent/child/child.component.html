@@ -1,0 +1,39 @@
+<div class="m-left-1" *ngIf="1 === 0">
+  
+  <h2>Child</h2>
+  
+  <p>
+    This is original content from the child.
+  </p>
+
+  <ng-content select=".content-1" #content1></ng-content>
+  
+  <ul>
+    <li>
+      This component has console data in the parent and only works after the view has been initialized.
+    </li>
+    <li>
+      Since we are using the component name, only the first one will be displayed in the console.
+    </li>
+    <li>
+      To choose a specific child, we can use an element reference.
+    </li>
+    <li>
+      To view all components, we must use ViewChildren.
+    </li>
+    <li>
+      To get the element reference of a component, we need to use the read property of the options object in the ViewChild.
+    </li>
+  </ul>
+
+</div>
+
+
+
+<div class="m-left-1" *ngIf="1 === 1">
+  <p>
+    View Children
+  </p>
+  <ng-content select=".c1"></ng-content>
+  <ng-content></ng-content>
+</div>
